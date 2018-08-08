@@ -1,34 +1,26 @@
 * {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Cousine', monospace;
   margin: 0 0;
   padding: 0 0;
+  box-sizing: border-box;
 }
 
-p {
-  font-size: 13px;
-  line-height: 1.5em;
+body {
+  min-height: 100vh;
 }
 
-.xsmall {
-  font-size: 11px;
-}
-
-.clickable {
-  cursor: pointer;
-}
-
-#warning {
-  height: 20px;
-  width: 100%;
-  padding: 5px;
-  display: none;
-  position: absolute;
+textarea {
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 4;
-
-  &.is-active {
-    background-color: rgba(0, 255, 255, 0.8);
-    display: block;
-  }
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 50px;
+  line-height: 1.6em;
+  font-size: 14px;
+  background-color: #121212;
+  color: white;
 }
