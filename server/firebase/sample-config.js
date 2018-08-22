@@ -1,4 +1,4 @@
-export const config = {
+const config = {
   apiKey: "123",
   authDomain: "your-project.firebaseapp.com",
   databaseURL: "https://your-project.firebaseio.com",
@@ -7,4 +7,9 @@ export const config = {
   messagingSenderId: "123"
 }
 
-export const namespace = 'optional-key'
+const namespace = 'optional-key'
+
+module.exports = {
+  config,
+  namespace
+}
